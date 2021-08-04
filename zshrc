@@ -3,7 +3,7 @@
 # Change ZSH Options
 
 # Create Alias
-alias ls='ls -a'
+alias ls='ls -lAFh'
 
 # Customize Prompts
 PROMPT='%1~ %L %# '
