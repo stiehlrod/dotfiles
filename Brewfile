@@ -18,6 +18,8 @@ brew "rbenv"
 brew "sbt"
 # JVM-based programming language
 brew "scala"
+# Application launcher and productivity software
+cask "alfred"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
 # Git client focusing on productivity
