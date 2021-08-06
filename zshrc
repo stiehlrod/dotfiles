@@ -14,6 +14,8 @@ mkdir -p "$@" && cd "$_";
 # Set Variables
 # Syntax highlighter for man pages using bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+
 # Change ZSH Options
 
 # Create Alias
