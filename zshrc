@@ -19,7 +19,9 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 # Change ZSH Options
 
 # Create Alias
-alias ls='ls -lAFh'
+## exa: User-friendly cURL replacement (command-line HTTP client)
+alias ls='exa -laFH --git'
+alias exa='exa -laFH --git'
 
 # Add Locations to $PATH Variables
 # Add Visual Studio Code (code)
