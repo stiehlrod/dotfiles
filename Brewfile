@@ -22,6 +22,11 @@ brew "rbenv"
 brew "sbt"
 # JVM-based programming language
 brew "scala"
+tap 'neovim/neovim' || true
+brew 'neovim'
+# need to install java before jenkins
+cask 'java'
+brew 'jenkins'
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
 # Application launcher and productivity software
@@ -34,3 +39,8 @@ cask "gitkraken"
 cask "grammarly"
 # Open-source code editor
 cask "visual-studio-code"
+# Google
+cask 'google-drive'
+
+cask 'slack'
+cask 'spotify'
