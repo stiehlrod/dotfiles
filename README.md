@@ -9,5 +9,6 @@ Steps
 3) Install Homebrew
 ```./set_up_homebrew.zsh ```
 
-Reference
+# Reference
+
 (Brewfile Config on Medium)[https://medium.com/@satorusasozaki/automate-mac-os-x-configuration-by-using-brewfile-58a78ce5cc53]
