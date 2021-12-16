@@ -14,6 +14,7 @@ brew "git"
 brew "httpie"
 # Platform built on V8 to build network applications
 brew "node"
+brew "yarn"
 # Development kit for the Java programming language
 brew "openjdk"
 # Ruby version manager
@@ -22,10 +23,13 @@ brew "rbenv"
 brew "sbt"
 # JVM-based programming language
 brew "scala"
+brew "coreutils"
 tap 'neovim/neovim' || true
 brew 'neovim'
+# ?brew 'rails','-v 6.1.4.1'
+brew 'openssl'
 # need to install java before jenkins
-cask 'java'
+brew 'java'
 brew 'jenkins'
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
@@ -44,3 +48,40 @@ cask 'google-drive'
 
 cask 'slack'
 cask 'spotify'
+
+=begin  
+http://railsapps.github.io/openssl-certificate-verify-failed.html
+
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+/opt/homebrew/etc/openssl@3/certs
+
+and run
+/opt/homebrew/opt/openssl@3/bin/c_rehash
+
+openssl@3 is keg-only, which means it was not symlinked into /opt/homebrew,
+because macOS provides LibreSSL.
+
+If you need to have openssl@3 first in your PATH, run:
+echo 'export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find openssl@3 you may need to set:
+export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include"
+
+For pkg-config to find openssl@3 you may need to set:
+export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig" 
+
+Linking /opt/homebrew/Cellar/openssl@3/3.0.0_1... 5482 symlinks created.
+
+If you need to have this software first in your PATH instead consider running:
+  echo 'export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"' >> ~/.zshrc
+  =end
+
+  =begin
+  https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-macos
+https://pjbelo.medium.com/using-google-maps-api-v3-with-rails-5-2-b066a4b2cf14
+
+http://railsapps.github.io/openssl-certificate-verify-failed.html
+
+  =end
