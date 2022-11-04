@@ -24,12 +24,15 @@ alias ls='exa -laFH --git'
 alias exa='exa -laFH --git'
 alias java8='export JAVA_HOME=$JAVA_8_HOME'
 alias java11='export JAVA_HOME=$JAVA_11_HOME'
+alias socks='vtk socks setup'
 
 # Add Locations to $PATH Variables
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export GITHUB_PAT=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
-export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+# export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+# Homebrew on the M1, where things install to /opt/homebrew
+export PATH=/opt/homebrew/bin:$PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
@@ -42,3 +45,9 @@ export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"
 java11
 # enable Terminal color
 export CLICOLOR=1
+LSCOLORS=GxFxCxDxBxegedabagaced
+
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+export PUPPETEER_EXECUTABLE_PATH=`which chromium`
+
+# https://brew.sh/2020/12/01/homebrew-2.6.0/
