@@ -48,6 +48,7 @@ cask 'google-drive'
 
 cask 'slack'
 cask 'spotify'
+cask 'dotnet'
 
 =begin  
 http://railsapps.github.io/openssl-certificate-verify-failed.html
