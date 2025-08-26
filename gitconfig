@@ -6,3 +6,16 @@
 [user]
 	name = Jennica Stiehl
 	email = 25069483+stiehlrod@users.noreply.github.com
+
+
+# git config
+# git config --global rerere.enabled true
+# git config --global branch.sort -committerdate
+# git maintenance start
+# git config --global alias.staash 'stash --all'
+# git config --global column.ui auto 
+# git blame -w -C -C -C
+# ignore whitespace and detect  lines moved or copied in the same commit
+# or the commit that created the file
+# or any commit at all
+# git log -L 15,26:path/to/file # git blame specific location by line numbers
